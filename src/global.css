@@ -1,0 +1,119 @@
+:root {
+  --red-color: #ff0000;
+  --black-color: #000;
+  --text-color: #fafafa;
+  --title-color: #ffffff;
+  --second-color: #1c2224;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: Montserrat, sans-serif;
+  box-sizing: border-box;
+  font-display: swap;
+}
+*::selection {
+  background-color: var(--red-color);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--black-color);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.App {
+  animation: transitionIn 1.7s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+.link {
+  color: inherit !important;
+}
+
+.wrapper {
+  padding-top: 110px;
+}
+
+.go-up {
+  position: fixed !important;
+  bottom: 50px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100%;
+  right: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.MuiSvgIcon-root {
+  color: #000;
+  font-size: 2rem !important;
+}
+
+.loading-spiner {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 99999999999999;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  height: 100%;
+}
+.loading-spiner.active {
+  display: none;
+}
+
+.logo-animation {
+  width: 80px;
+  height: auto;
+  animation: logo_animation 0.8s infinite;
+}
+
+@keyframes logo_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.notfound {
+  background: var(--black-color);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  color: var(--red-color);
+  text-align: center;
+}
+.notfound h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+.notfound p {
+  font-size: 30px;
+}
+.notfound a {
+  border: 2px solid var(--red-color);
+  padding: 10px 40px;
+  color: var(--text-color);
+}

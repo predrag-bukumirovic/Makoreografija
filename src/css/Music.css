@@ -1,0 +1,28 @@
+.row-music {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.row-music div {
+  width: 500px;
+  margin: 0 auto;
+}
+.row-music div iframe {
+  width: 100%;
+}
+
+@media (max-width: 1170px) {
+  .row-music {
+    grid-template-columns: auto auto;
+  }
+  .row-music div {
+    width: 350px;
+  }
+  .row-music div iframe {
+    width: 100%;
+  }
+}
+@media (max-width: 730px) {
+  .row-music {
+    grid-template-columns: auto;
+  }
+}

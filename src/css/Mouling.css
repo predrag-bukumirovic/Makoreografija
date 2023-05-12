@@ -1,0 +1,46 @@
+.container-video {
+  width: 1300px;
+  margin: 50px auto;
+  padding: 10px;
+}
+.moulin-video,
+.full-show {
+  width: 100%;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.gallery img {
+  width: 400px;
+  min-height: auto;
+  margin: 10px;
+}
+
+@media (max-width: 1300px) {
+  .container-video,
+  .full-show,
+  .gallery-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1310px) {
+  .gallery {
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 900px) {
+  .gallery img {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: auto;
+  }
+}

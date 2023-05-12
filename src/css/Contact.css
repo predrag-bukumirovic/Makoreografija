@@ -1,0 +1,75 @@
+.container-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.contact-form {
+  width: 700px;
+  padding: 20px;
+}
+
+.contact-form form {
+  margin-top: 50px;
+}
+.contact-form form input,
+.contact-form form textarea {
+  display: block;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--red-color);
+  font-size: 18px;
+  padding: 10px 5px;
+  width: 100%;
+  margin: 5px 0 40px 0;
+}
+.contact-form form textarea {
+  resize: none;
+  height: 200px;
+  border: none;
+  border-bottom: 1px solid var(--red-color);
+}
+
+.contact-form form label {
+  color: var(--text-color);
+}
+.contact-form form button {
+  background: transparent;
+  outline: none;
+  border: 2px solid var(--red-color);
+  color: var(--text-color);
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.contact-form form button:hover {
+  background: var(--red-color);
+}
+.social a {
+  color: var(--text-color);
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.contact-info {
+  width: 500px;
+  padding: 20px;
+}
+.MuiPaper-root {
+  background: #00c100 !important;
+}
+
+input:required:valid,
+textarea:required:valid {
+  border-color: #00c100;
+}
+input:invalid,
+textarea:invalid {
+  border-bottom: 2px solid red;
+}
